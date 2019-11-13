@@ -1,0 +1,92 @@
+@import './var.scss';
+body {
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-family: Arial, Helvetica, 'STHeiti STXihei', 'Microsoft YaHei', Tohoma, sans-serif;
+  background-color: $bg;
+  *,
+  ::before,
+  ::after {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: $md;
+    vertical-align: baseline;
+    color: $black;
+    border: 0;
+    box-sizing: border-box;
+  }
+}
+
+html {
+  line-height: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q::before,
+q::after,
+blockquote::before,
+blockquote::after {
+  content: '';
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+  background: transparent;
+}
+
+img:not([src]) {
+  opacity: o;
+}
+
+button,
+input[type='number'],
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='search'],
+select,
+textarea {
+  margin: 0;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  font-family: inherit;
+  -webkit-appearance: none;
+  &:focus {
+    outline: none;
+  }
+}
+button::before, button::after {
+  border: none;
+  outline: none;
+}

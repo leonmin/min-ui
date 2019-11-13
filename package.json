@@ -1,11 +1,27 @@
 {
-  "name": "base-ts",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@leonmin/vui",
+  "version": "0.0.1",
+  "private": false,
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "style": "lib/index.css",
+  "typings": "types/index.d.ts",
+  "files": [
+    "es",
+    "lib",
+    "types",
+    "vetur"
+  ],
   "scripts": {
+    "bootstrap": "npm i",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:entry": "node build/build-entry.js",
+    "build:lib": "node build/build-lib.js",
+    "build:site": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "release": "sh build/relase.sh",
+    "release:site": "sh build/relase-site.sh"
   },
   "dependencies": {
     "core-js": "^3.3.2",
@@ -16,19 +32,43 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-decorators": "^7.7.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@babel/plugin-transform-object-assign": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-typescript": "^7.7.2",
+    "@types/jest": "^24.0.11",
+    "@vant/markdown-vetur": "^1.0.0",
+    "@vue/babel-preset-jsx": "^1.1.2",
     "@vue/cli-plugin-babel": "^4.0.0",
     "@vue/cli-plugin-eslint": "^4.0.0",
     "@vue/cli-plugin-router": "^4.0.0",
     "@vue/cli-plugin-typescript": "^4.0.0",
+    "@vue/cli-plugin-unit-jest": "^4.0.5",
     "@vue/cli-plugin-vuex": "^4.0.0",
     "@vue/cli-service": "^4.0.0",
     "@vue/eslint-config-standard": "^4.0.0",
     "@vue/eslint-config-typescript": "^4.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "csso": "^4.0.2",
+    "dependency-tree": "^7.0.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "fast-glob": "^3.1.0",
+    "fs-extra": "^8.1.0",
+    "node-sass": "^4.13.0",
+    "postcss": "^7.0.21",
+    "postcss-load-config": "^2.1.0",
     "sass": "^1.19.0",
     "sass-loader": "^8.0.0",
+    "shelljs": "^0.8.3",
+    "signale": "^1.4.0",
     "typescript": "~3.5.3",
-    "vue-template-compiler": "^2.6.10"
+    "uppercamelcase": "^3.0.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }

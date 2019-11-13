@@ -1,0 +1,46 @@
+// base colors
+$default: #333;
+$red: #ee0a24;
+$blue: #1989fa;
+$green: #07c160;
+$yellow: #ff976a;
+
+// behavior colors
+$primary: $default;
+$success: $green;
+$warning: $yellow;
+$error: $red;
+$info: $blue;
+
+// text colors
+$white: #fff;
+$black: #333;
+$gray: #666;
+$grey: #999;
+$silber: #ccc;
+$split: #ccc;
+$disable: #c0c0c0;
+$placeholder: #808080;
+
+// bg colors
+$bg: #f0f0f0;
+$mask:rgba(0, 0, 0, 0.4);
+$actived: .7;
+$disabled: .5;
+
+// border
+$border-color: #f0f0f0;
+$border: 1px solid $border-color;
+$radius: 4px;
+
+// text size
+$xs: 9upx;
+$sm: 12upx;
+$md: 14upx;
+$xm: 15upx;
+$lg: 16upx;
+$xl: 18upx;
+
+// distance
+$padding: 15px;
+$margin: 10px;
