@@ -33,9 +33,9 @@ const components: any = [
 ];
 
 const install = (Vue: VueConstructor) => {
-  components.forEach(Component => {
-    Vue.use(Component);
-  });
+  Object.keys(components).forEach(key => {
+    Vue.component(key, components[key])
+  })
 };
 
 /* istanbul ignore if */
@@ -57,5 +57,9 @@ export default {
 
   fs.writeFileSync(path.join(__dirname, '../packages/index.ts'), content);
 }
+
+// components.forEach(Component => {
+//   Vue.use(Component);
+// });
 
 buildEntry();

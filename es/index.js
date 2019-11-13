@@ -4,8 +4,8 @@ var version = '0.0.1';
 var components = [Icon];
 
 var install = function install(Vue) {
-  components.forEach(function (Component) {
-    Vue.use(Component);
+  Object.keys(components).forEach(function (key) {
+    Vue.component(key, components[key]);
   });
 };
 /* istanbul ignore if */
