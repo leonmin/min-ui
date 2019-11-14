@@ -3,9 +3,9 @@ import { Component, Prop, Vue, Emit } from 'vue-property-decorator'
 
 @Component
 export default class MinIcon extends Vue {
-  @Prop(String) name?: string;
-  @Prop([String, Number]) size?: string | number;
-  @Prop(String) color?: string;
+  @Prop(String) readonly name?: string;
+  @Prop([String, Number]) readonly size?: string | number;
+  @Prop(String) readonly color?: string;
 
   @Emit()
   click (): void {}

@@ -14,7 +14,7 @@ export default class IconMenu extends Vue {
     return (
       <div>
         <div onClick={this.handleClick}>下大撒法</div>
-        <min-icon color="#fff" size="3"></min-icon>
+        <min-icon color="#fff" size="4"></min-icon>
         {/* <van-icon name="close" on-click={this.handleClick} /> */}
         {/* <min-icon size={12} color="#ccc" name="close" on-click={this.handleClick} /> */}
       </div>

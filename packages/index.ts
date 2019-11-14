@@ -8,13 +8,13 @@ declare global {
   }
 }
 
-const version = '0.0.2';
-const components: any = [
+const version = '0.0.3';
+const components: any = {
   minIcon
-];
+};
 
 const install = (Vue: VueConstructor) => {
-  if (install.installed) return
+  console.log('com', components)
   Object.keys(components).forEach(key => {
     console.log('key', key)
     Vue.component(key, components[key])

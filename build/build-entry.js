@@ -33,12 +33,12 @@ declare global {
 }
 
 const version = '${version}';
-const components: any = [
+const components: any = {
   ${installList.join(',\n  ')}
-];
+};
 
 const install = (Vue: VueConstructor) => {
-  if (install.installed) return
+  console.log('com', components)
   Object.keys(components).forEach(key => {
     console.log('key', key)
     Vue.component(key, components[key])
