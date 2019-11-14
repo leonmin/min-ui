@@ -4,11 +4,11 @@ import router from './router'
 import store from './store'
 
 // import min from '../lib/index.js'
-import vant from 'vant'
-import 'vant/lib/index.css'
+// import vant from 'vant'
+// import 'vant/lib/index.css'
 
 // Vue.use(min)
-Vue.use(vant)
+// Vue.use(vant)
 Vue.config.productionTip = false
 
 new Vue({

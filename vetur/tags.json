@@ -1,15 +1,1 @@
-{
-  "min-icon": {
-    "description": "API",
-    "attributes": [
-      "name",
-      "dot",
-      "info",
-      "color",
-      "size",
-      "class-prefix",
-      "tag",
-      "click"
-    ]
-  }
-}
+{}
